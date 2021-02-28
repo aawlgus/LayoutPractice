@@ -11,7 +11,7 @@ class SecondViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "SECOND"
+        self.navigationItem.title = "SECOND"
         self.view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
         // Do any additional setup after loading the view.
     }

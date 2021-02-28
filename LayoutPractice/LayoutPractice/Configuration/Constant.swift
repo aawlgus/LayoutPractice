@@ -6,3 +6,6 @@
 //
 
 import Foundation
+struct Constant {
+    static let NAVER_BASE_URL = "https://openapi.naver.com/v1/search/book.json"
+}

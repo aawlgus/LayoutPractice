@@ -19,4 +19,7 @@ class BaseViewController: UIViewController {
         // Background Color
         self.view.backgroundColor = .white
     }
+    
+    // 기타 함수들, 변수들 생성하여 사용하기
+    
 }

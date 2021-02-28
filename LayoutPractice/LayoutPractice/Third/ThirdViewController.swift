@@ -11,7 +11,7 @@ class ThirdViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "THIRD"
+        self.navigationItem.title = "THIRD"
         self.view.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
         // Do any additional setup after loading the view.
     }
