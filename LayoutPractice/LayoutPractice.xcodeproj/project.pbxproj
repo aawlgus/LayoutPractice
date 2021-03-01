@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		599BAEEA25ECA6D700F4E576 /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599BAEE825ECA6D700F4E576 /* DynamicTableViewCell.swift */; };
+		599BAEEB25ECA6D700F4E576 /* DynamicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 599BAEE925ECA6D700F4E576 /* DynamicTableViewCell.xib */; };
 		59F8872825EA574200B9BA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8872725EA574200B9BA07 /* AppDelegate.swift */; };
 		59F8872A25EA574200B9BA07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8872925EA574200B9BA07 /* SceneDelegate.swift */; };
 		59F8873125EA574600B9BA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F8873025EA574600B9BA07 /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		2C36C5B52C0CCBC1FAF991AE /* Pods-LayoutPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutPractice.release.xcconfig"; path = "Target Support Files/Pods-LayoutPractice/Pods-LayoutPractice.release.xcconfig"; sourceTree = "<group>"; };
+		599BAEE825ECA6D700F4E576 /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
+		599BAEE925ECA6D700F4E576 /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
 		59F8872425EA574200B9BA07 /* LayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F8872725EA574200B9BA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F8872925EA574200B9BA07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			children = (
 				59F8878225EA6AEE00B9BA07 /* ThirdViewController.swift */,
 				59F8878325EA6AEE00B9BA07 /* ThirdViewController.xib */,
+				599BAEE825ECA6D700F4E576 /* DynamicTableViewCell.swift */,
+				599BAEE925ECA6D700F4E576 /* DynamicTableViewCell.xib */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				59F8877B25EA6A6400B9BA07 /* FirstViewController.xib in Resources */,
 				59F8878525EA6AEE00B9BA07 /* ThirdViewController.xib in Resources */,
 				59F887B625EB297B00B9BA07 /* BookTableViewCell.xib in Resources */,
+				599BAEEB25ECA6D700F4E576 /* DynamicTableViewCell.xib in Resources */,
 				59F8879225EA6F6600B9BA07 /* NotoSansCJKkr-Regular.otf in Resources */,
 				59F8879025EA6F6600B9BA07 /* NotoSansCJKkr-Bold.otf in Resources */,
 				59F887BB25EB2A5000B9BA07 /* BookSearchResultViewController.xib in Resources */,
@@ -432,6 +439,7 @@
 				59F8875E25EA65B000B9BA07 /* UIButton.swift in Sources */,
 				59F8877F25EA6AA600B9BA07 /* SecondViewController.swift in Sources */,
 				59F8876B25EA65FF00B9BA07 /* IndicatorView.swift in Sources */,
+				599BAEEA25ECA6D700F4E576 /* DynamicTableViewCell.swift in Sources */,
 				59F8875D25EA65B000B9BA07 /* UIView.swift in Sources */,
 				59F8877425EA686F00B9BA07 /* BaseViewController.swift in Sources */,
 				59F8876025EA65B000B9BA07 /* Date.swift in Sources */,

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free-icon-home-3135751" translatesAutoresizingMaskIntoConstraints="NO" id="uyV-RA-HoM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" translatesAutoresizingMaskIntoConstraints="NO" id="uyV-RA-HoM">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uyV-RA-HoM" secondAttribute="height" multiplier="1:1" id="7Bg-za-4UG"/>
@@ -38,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="free-icon-home-3135751" width="512" height="512"/>
+        <image name="husky" width="225" height="214"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

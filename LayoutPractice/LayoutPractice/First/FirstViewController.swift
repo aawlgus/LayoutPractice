@@ -18,6 +18,11 @@ class FirstViewController: BaseViewController {
         self.dismissKeyboardWhenTappedAround()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.queryTextField.text = ""
+        self.dismissKeyboardWhenTappedAround()
+    }
+    
     @IBAction func searchButtonTapped(_ sender: Any) {
         guard let query = queryTextField.text?.trim, query.isExists else {
             self.presentAlert(title: "검색어를 입력하세요. ")
