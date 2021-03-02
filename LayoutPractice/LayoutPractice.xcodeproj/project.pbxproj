@@ -171,13 +171,13 @@
 		59F8874825EA64C800B9BA07 /* First */ = {
 			isa = PBXGroup;
 			children = (
-				59F887AC25EB293200B9BA07 /* FirstCells */,
 				59F8877825EA6A6400B9BA07 /* FirstViewController.swift */,
 				59F8877925EA6A6400B9BA07 /* FirstViewController.xib */,
-				59F887A225EB13A600B9BA07 /* DataManager */,
-				59F887A125EB13A000B9BA07 /* Entity */,
 				59F887B825EB2A5000B9BA07 /* BookSearchResultViewController.swift */,
 				59F887B925EB2A5000B9BA07 /* BookSearchResultViewController.xib */,
+				59F887A225EB13A600B9BA07 /* DataManager */,
+				59F887A125EB13A000B9BA07 /* Entity */,
+				59F887AC25EB293200B9BA07 /* FirstCells */,
 			);
 			path = First;
 			sourceTree = "<group>";

@@ -23,7 +23,7 @@ class SecondViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "SECOND"
+        self.navigationItem.title = "Scroll View"
         tableView.dataSource = self
         tableView.delegate = self
         

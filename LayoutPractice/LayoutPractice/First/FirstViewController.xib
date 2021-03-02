@@ -19,44 +19,81 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="책 검색하기" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdS-Tv-SwN">
-                    <rect key="frame" x="30" y="265" width="354" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어떤 책을 읽을 건가요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bue-d3-8rg">
-                    <rect key="frame" x="30" y="138" width="354" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색을 통해 가장 먼저 읽을 책을 골라주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-G4-soo">
-                    <rect key="frame" x="30" y="194" width="291" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwQ-ZW-KtP">
-                    <rect key="frame" x="344" y="271" width="20" height="22"/>
-                    <state key="normal" image="magnifyingglass" catalog="system"/>
-                    <connections>
-                        <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="pHh-bY-Kkx"/>
-                    </connections>
-                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ah-h6-7le">
+                    <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJ1-XS-CQT">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="책 검색하기" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdS-Tv-SwN">
+                                    <rect key="frame" x="20" y="117" width="374" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어떤 책을 읽을 건가요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bue-d3-8rg">
+                                    <rect key="frame" x="20" y="20" width="374" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색을 통해 가장 먼저 읽을 책을 골라주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE2-G4-soo">
+                                    <rect key="frame" x="20" y="66" width="291" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwQ-ZW-KtP">
+                                    <rect key="frame" x="358" y="123" width="20" height="22"/>
+                                    <state key="normal" image="magnifyingglass" catalog="system"/>
+                                    <connections>
+                                        <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="pHh-bY-Kkx"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="books-icon-512" translatesAutoresizingMaskIntoConstraints="NO" id="3zB-sy-uH2">
+                                    <rect key="frame" x="137" y="401" width="140" height="140"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="140" id="Eoh-iI-dFO"/>
+                                        <constraint firstAttribute="width" secondItem="3zB-sy-uH2" secondAttribute="height" multiplier="1:1" id="FTF-Sr-b3v"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="3zB-sy-uH2" firstAttribute="centerX" secondItem="HJ1-XS-CQT" secondAttribute="centerX" id="42K-cf-nYE"/>
+                                <constraint firstItem="LdS-Tv-SwN" firstAttribute="top" secondItem="cE2-G4-soo" secondAttribute="bottom" constant="30" id="Gfz-KC-0u7"/>
+                                <constraint firstItem="bue-d3-8rg" firstAttribute="leading" secondItem="HJ1-XS-CQT" secondAttribute="leading" constant="20" id="JMU-B2-oTH"/>
+                                <constraint firstItem="cE2-G4-soo" firstAttribute="leading" secondItem="HJ1-XS-CQT" secondAttribute="leading" constant="20" id="Nt5-oo-MC7"/>
+                                <constraint firstAttribute="trailing" secondItem="bue-d3-8rg" secondAttribute="trailing" constant="20" id="Qoj-Gd-SLa"/>
+                                <constraint firstAttribute="trailing" secondItem="IwQ-ZW-KtP" secondAttribute="trailing" constant="36" id="RfN-dx-NdN"/>
+                                <constraint firstItem="3zB-sy-uH2" firstAttribute="top" secondItem="LdS-Tv-SwN" secondAttribute="bottom" constant="250" id="UYV-Hu-Gwo"/>
+                                <constraint firstItem="LdS-Tv-SwN" firstAttribute="leading" secondItem="HJ1-XS-CQT" secondAttribute="leading" constant="20" id="dFx-b8-dR7"/>
+                                <constraint firstAttribute="trailing" secondItem="LdS-Tv-SwN" secondAttribute="trailing" constant="20" id="f4a-I3-bGs"/>
+                                <constraint firstAttribute="bottom" secondItem="3zB-sy-uH2" secondAttribute="bottom" constant="200" id="gKM-oY-8UG"/>
+                                <constraint firstItem="IwQ-ZW-KtP" firstAttribute="centerY" secondItem="LdS-Tv-SwN" secondAttribute="centerY" id="gRL-Km-PSs"/>
+                                <constraint firstItem="cE2-G4-soo" firstAttribute="top" secondItem="bue-d3-8rg" secondAttribute="bottom" constant="10" id="ksX-0n-Rii"/>
+                                <constraint firstItem="bue-d3-8rg" firstAttribute="top" secondItem="HJ1-XS-CQT" secondAttribute="top" constant="20" id="kyH-MQ-mml"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cE2-G4-soo" secondAttribute="trailing" constant="20" id="pe4-rx-vat"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="HJ1-XS-CQT" firstAttribute="bottom" secondItem="Oko-uq-hKD" secondAttribute="bottom" id="4Li-T8-E8m"/>
+                        <constraint firstItem="HJ1-XS-CQT" firstAttribute="width" secondItem="eza-hh-S1f" secondAttribute="width" id="Oaw-Cq-jEe"/>
+                        <constraint firstItem="HJ1-XS-CQT" firstAttribute="leading" secondItem="Oko-uq-hKD" secondAttribute="leading" id="S9b-VG-Ho6"/>
+                        <constraint firstItem="HJ1-XS-CQT" firstAttribute="top" secondItem="Oko-uq-hKD" secondAttribute="top" id="kJ4-Wt-0uE"/>
+                        <constraint firstItem="HJ1-XS-CQT" firstAttribute="trailing" secondItem="Oko-uq-hKD" secondAttribute="trailing" id="x9q-fp-KfI"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Oko-uq-hKD"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="eza-hh-S1f"/>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="cE2-G4-soo" firstAttribute="top" secondItem="bue-d3-8rg" secondAttribute="bottom" constant="20" id="0ed-4I-w80"/>
-                <constraint firstItem="LdS-Tv-SwN" firstAttribute="top" secondItem="cE2-G4-soo" secondAttribute="bottom" constant="50" id="63A-AH-ucM"/>
-                <constraint firstItem="LdS-Tv-SwN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="EjW-0R-98v"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LdS-Tv-SwN" secondAttribute="trailing" constant="30" id="IuI-1o-9u5"/>
-                <constraint firstItem="bue-d3-8rg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="NYJ-ro-zBx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bue-d3-8rg" secondAttribute="trailing" constant="30" id="OtJ-Tt-Gis"/>
-                <constraint firstItem="bue-d3-8rg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Sg1-jS-SxM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IwQ-ZW-KtP" secondAttribute="trailing" constant="50" id="wFj-jy-upo"/>
-                <constraint firstItem="cE2-G4-soo" firstAttribute="leading" secondItem="bue-d3-8rg" secondAttribute="leading" id="wmK-LL-mtk"/>
-                <constraint firstItem="IwQ-ZW-KtP" firstAttribute="centerY" secondItem="LdS-Tv-SwN" secondAttribute="centerY" id="zim-kr-Imw"/>
+                <constraint firstItem="0ah-h6-7le" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="86D-5d-NnX"/>
+                <constraint firstItem="0ah-h6-7le" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Kn9-OF-BzC"/>
+                <constraint firstItem="0ah-h6-7le" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ctl-4q-aT2"/>
+                <constraint firstItem="0ah-h6-7le" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hsx-gr-Dez"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -64,6 +101,7 @@
         </view>
     </objects>
     <resources>
+        <image name="books-icon-512" width="512" height="512"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

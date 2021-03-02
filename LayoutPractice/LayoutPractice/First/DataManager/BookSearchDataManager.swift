@@ -23,7 +23,29 @@ class BookSearchDataManager {
                     if response.total == 0 {
                         viewController.failedToRequest(message: "검색 결과가 없습니다. ")
                     } else {
-                        viewController.didRetrieveBookData(response.items)
+                        //viewController.didRetrieveBookData(response.items)
+                        for i in 1...response.items.count {
+                            let book = BookData()
+                            let bookResponse = response.items[i-1]
+                            book.title = bookResponse.title
+                            book.author = bookResponse.author
+                            book.publisher = bookResponse.publisher
+                            book.image = bookResponse.image
+                            DispatchQueue.global().async {
+                                guard book.image != nil else {
+                                    return
+                                }
+                                if let url = URL(string: book.image!) {
+                                    if let imageData = try? Data(contentsOf: url) {
+                                        book.imageData = UIImage(data: imageData)
+                                    }
+                                }
+                                viewController.bookData.append(book)
+                                DispatchQueue.main.async {
+                                    viewController.didRetrieveBookData()
+                                }
+                            }
+                        }
                     }
                 case .failure(let error):
                     print(error.localizedDescription)

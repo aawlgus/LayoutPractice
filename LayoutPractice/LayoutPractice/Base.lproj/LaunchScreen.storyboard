@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" translatesAutoresizingMaskIntoConstraints="NO" id="uyV-RA-HoM">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" highlightedImage="husky" translatesAutoresizingMaskIntoConstraints="NO" id="uyV-RA-HoM">
+                                <rect key="frame" x="147" y="388" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uyV-RA-HoM" secondAttribute="height" multiplier="1:1" id="7Bg-za-4UG"/>
-                                    <constraint firstAttribute="height" constant="100" id="ra2-eC-IU0"/>
+                                    <constraint firstAttribute="height" constant="120" id="ra2-eC-IU0"/>
                                 </constraints>
                             </imageView>
                         </subviews>

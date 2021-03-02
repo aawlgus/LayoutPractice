@@ -10,10 +10,15 @@ import UIKit
 class BookTableViewCell: UITableViewCell {
     
     let cellID = "BookTableViewCell"
-
+    
+    @IBOutlet weak var bookImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var publisherLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.bookImage.image = UIImage(named: "animal_farm")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

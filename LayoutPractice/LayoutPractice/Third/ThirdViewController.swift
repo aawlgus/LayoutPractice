@@ -17,7 +17,7 @@ class ThirdViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "THIRD"
+        self.navigationItem.title = "Self Sizing"
         tableView.dataSource = self
         tableView.delegate = self
         

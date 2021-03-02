@@ -10,11 +10,13 @@ import UIKit
 class FirstViewController: BaseViewController {
     
     @IBOutlet weak var queryTextField: UITextField!
+    var books: [Book] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "네이버 책 검색"
         
+        //self.queryTextField.becomeFirstResponder()
         self.dismissKeyboardWhenTappedAround()
     }
     
@@ -28,6 +30,7 @@ class FirstViewController: BaseViewController {
             self.presentAlert(title: "검색어를 입력하세요. ")
             return
         }
+        self.queryTextField.resignFirstResponder()
         let resultVC = BookSearchResultViewController(query)
         self.navigationController?.pushViewController(resultVC, animated: true)
     }
